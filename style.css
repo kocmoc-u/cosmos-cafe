@@ -1,4 +1,4 @@
-/* kocmoc_kafe_v1.3 = 20201218.2340 */
+/* kocmoc_kafe_v1.4 */
 @font-face {
     font-family: "RodchenkoCTT";
     src:url("./font/RodchenkoCTT.eot"),
@@ -66,7 +66,7 @@
 
   /*選択されているタブのコンテンツのみを表示*/
   #coffee:checked ~ #coffee_content,
-  #programming:checked ~ #programming_content,
+  #tea:checked ~ #tea_content,
   #design:checked ~ #design_content {
     display: block;
   }
@@ -86,7 +86,8 @@
 
   .ds_eraser_cyr {
       font-family: "DSEraserCyr";
-      font-size: 16pt;
+      font-size: 14pt;
+      letter-spacing: 0.12em;
   }
 
   body{
@@ -103,7 +104,15 @@
     height: 400px;
     background: url("./img/coffee_top.png");
     background-size: cover;
-    background-position: 5% 0%;
+    background-position: left;
+  }
+
+  .topimage_tea {
+    width: 100%;
+    height: 400px;
+    background: url("./img/tea_top.png") no-repeat;
+    background-size: cover;
+    background-position: right;
   }
 
   .footer {
@@ -129,6 +138,19 @@
     font-size: 0;
   }
 
+  .text0 {
+    width: 300px;
+    color: black;
+    background-color: rgb(240, 240, 240);
+    text-align: left;
+    margin: 5px auto;
+   /* margin-top: 10px;
+    margin-left: 30px;　*/
+    font-family: 'メイリオ','ヒラギノ角ゴ ProN W3','YuGothic','Yu Gothic','Hiragino Kaku Gothic ProN','ＭＳ ゴシック',sans-serif;;
+    font-size: 12pt;
+    line-height: 24px;
+  }
+
   .text1 {
     width: 300px;
     color: black;
@@ -144,21 +166,28 @@
     width: 300px;
     color: black;
     background-color: rgb(240, 240, 240);
-    text-align: left;
-    margin: 5px auto;
-   /* margin-top: 10px;
-    margin-left: 30px;　*/
-    font-family: 'メイリオ','ヒラギノ角ゴ ProN W3','YuGothic','Yu Gothic','Hiragino Kaku Gothic ProN','ＭＳ ゴシック',sans-serif;;
-    font-size: 12pt;
-    line-height: 24px;
+    text-align: center;
+    margin: -10px auto;
+    font-family: "DSEraserCyr";
+    font-size: 22pt;
+    letter-spacing: 0.12em;
+    line-height: 22px;
   }
 
-  .text_footer {
+  .text_footer1 {
     margin-top: 20px;
     margin-left: 20px;
     background-color: #ffda00;
     text-align: left;
     font-size: 20px;
+  }
+
+  .text_footer2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #ffda00;
+    text-align: left;
+    font-size: 16px;
   }
 
   .soushoku {
@@ -190,7 +219,7 @@
   /*  overflow-y: scroll; */
   }
   /* チェックボックスの初期設定＝それぞれ id での指定が必須*/
-  #popup-on1,#popup-on2,#popup-on3,#popup-on4,#popup-on5,#popup-on6,#popup-on7,#popup-on8 {
+  #popup-on1,#popup-on2,#popup-on3,#popup-on4,#popup-on5,#popup-on6,#popup-on7,#popup-on8,#popup-on9 {
     display: none;
   }
 
@@ -217,6 +246,9 @@
     display: block;
   }
   #popup-on8:checked + .popup{
+    display: block;
+  }
+  #popup-on9:checked + .popup{
     display: block;
   }
 
@@ -269,7 +301,15 @@
     height: 150px;
     background: url("./img/coffee_top.png");
     background-size: cover;
-    background-position: 5% 0%;
+    background-position: left;
+  }
+
+  .topimage_tea {
+    width: 100%;
+    height: 150px;
+    background: url("./img/tea_top.png");
+    background-size: cover;
+    background-position: right;
   }
 
   .komado {
@@ -290,12 +330,30 @@
     letter-spacing: 0.02em
   }
 
-  .text_footer {
+  .text2 {
+    width: 270px;
+    color: black;
+    background-color: rgb(240, 240, 240);
+    text-align: center;;
+    margin: 0 auto;
+    font-size: 18pt;
+    letter-spacing: 0.12em
+  }
+
+  .text_footer1 {
     margin-top: 20px;
     margin-left: 20px;
     background-color: #ffda00;
     text-align: left;
     font-size: 20px;
+  }
+
+  .text_footer2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #ffda00;
+    text-align: left;
+    font-size: 14px;
   }
 
   .popup {
