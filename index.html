@@ -1,4 +1,4 @@
-<!--kocmoc_kafe_v1.2 = 20201214.1500-->
+<!--cosmos cafe menu_v1.2 = 20201218.1800-->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <title>COSMOS CAFE MENU</title>
+    <title>COSMOS CAFE MENU v1.2</title>
 
     <meta name="description" content="ページの内容の説明を記述する箇所。100文字程度いけます。">
     <meta name="format-derection" conrent="email=no,telephone=no,adress=no">
@@ -17,17 +17,17 @@
 
 <body>
  <div class="tabs">
-        <input id="coffer" type="radio" name="tab_item" checked>
-        <label class="tab_item rodchencko" for="coffer">COFFEE</label>
+        <input id="coffee" type="radio" name="tab_item" checked>
+        <label class="tab_item rodchencko" for="coffee">COFFEE</label>
 
         <input id="programming" type="radio" name="tab_item">
         <label class="tab_item ds_eraser_cyr" for="programming">TEA</label>
 
         <input id="design" type="radio" name="tab_item">
-        <label class="tab_item" for="design">酒</label>
+        <label class="tab_item" for="design">РЕМОНТ</label>
 
- <!-- COFFEE タブ -->
-        <div class="tab_content" id="coffer_content">
+ <!-- coffee タブ -->
+        <div class="tab_content" id="coffee_content">
         <div class="tab_content_description">
  <!-- イメージの読み込み -->
   <div class="header">
@@ -260,22 +260,83 @@
       INSTAGRAM : <a href="https://www.instagram.com/kocmoc_kafe/">KOCMOC_KAFE</a><br>
     </p>
   </div>
-  <!-- ↑ coffeeタブ ここで終わり -->
+ </div>
+</div>
+<!-- ↑ coffeeタブ ここで終わり -->
+
+<!-- tea タブ -->
+        <div class="tab_content" id="tea_content">
+        <div class="tab_content_description">
+ <!-- イメージの読み込み -->
+  <div class="header">
+    <div class="topimage_tea"></div>
+  </div>
+ <!-- メインの大枠 -->
+    <div class="main">
+
+ <!-- 小窓 1 ポーランド-->
+      <div class="komado">
+        <div class="pop-box">
+          <label for="popup-on1"><div class="btn-open"><img src="./img/coffer_poland_300.png"></div></label>
+          <input type="checkbox" id="popup-on1">
+          <div class="popup">
+            <label for="popup-on1" class="icon-close">×</label>
+            <div class="popup-content">
+ <!-- ポップアップの中身＆コメント -->
+              <img src="./img/coffer_poland.png" alt="" class="layer-img">
+              <p class="text1">
+                AMERICANO<br>
+                <span class="soushoku">OR</span><br>
+                CAPPUCCINO</p>
+ <!-- ポップアップの中身 ここまで -->
+            </div>
+          </div>
+ <!-- 説明文 -->
+          <p class="text2">
+            ポーランドで買ったマキネッタ <br>
+            メーカーは失念したけど確かイタリア製 <br>
+            安定の深い香り
+          </p>
+        </div>
+      </div>
+
+ <!-- 小窓 9 ロゴ 不動-->
+    <div class="komado">
+     <div id="img"></div>
+     <p class="text1">
+         BEST CAFE <br>
+         IN THE UNIVERSE</p>
+      </div>
+  </div>
+
+  <div class="footer">
+    <p class="text1 text_footer">
+      <br>
+      COSMOS CAFE<br>
+      INSTAGRAM : <a href="https://www.instagram.com/kocmoc_kafe/">KOCMOC_CAFE</a><br>
+    </p>
+  </div>
+ </div>
+</div>
+<!-- ↑ tea タブ ここで終わり -->
 
 
 
 
         <div class="tab_content" id="programming_content">
           <div class="tab_content_description">
-            <p class="c-txtsp">プログラミングの内容がここに入ります</p>
+            <p class="c-txtsp">　РЕМОНТ</p>
           </div>
         </div>
 
         <div class="tab_content" id="design_content">
           <div class="tab_content_description">
-            <p class="c-txtsp">デザインの内容がここに入ります</p>
+            <p class="c-txtsp">　РЕМОНТ</p>
           </div>
         </div>
+
+
+      </div>
 
   <!-- IE Edge でレスポンシブに対応させる .js -->
     <script src="js/ofi.js"></script>
