@@ -1,4 +1,4 @@
-/* kocmoc_kafe_v1.2 = 20201214.1500 */
+/* kocmoc_kafe_v1.3 = 20201218.2340 */
 @font-face {
     font-family: "RodchenkoCTT";
     src:url("./font/RodchenkoCTT.eot"),
@@ -65,7 +65,7 @@
 
 
   /*選択されているタブのコンテンツのみを表示*/
-  #coffer:checked ~ #coffer_content,
+  #coffee:checked ~ #coffee_content,
   #programming:checked ~ #programming_content,
   #design:checked ~ #design_content {
     display: block;
@@ -80,7 +80,7 @@
   /*文字スタイルをそれぞれ指定*/
   .rodchencko {
     font-family: "RodchenkoCTT";
-    font-size: 18pt;
+    font-size: 16pt;
     letter-spacing: 0.1em;
   }
 
@@ -107,7 +107,7 @@
   }
 
   .footer {
-    height: 150px;
+    height: 120px;
     background: #ffda00;
     color: #fff;
     clear: both;
@@ -158,8 +158,7 @@
     margin-left: 20px;
     background-color: #ffda00;
     text-align: left;
-    font-size: 18pt;
-    letter-spacing: 0.02em
+    font-size: 20px;
   }
 
   .soushoku {
@@ -296,8 +295,7 @@
     margin-left: 20px;
     background-color: #ffda00;
     text-align: left;
-    font-size: 16pt;
-    letter-spacing: 0.05em
+    font-size: 20px;
   }
 
   .popup {
